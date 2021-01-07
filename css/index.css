@@ -1,0 +1,85 @@
+.row1{
+  display: flex;
+}
+.col1{
+  flex: 1;
+  border: beige;
+}
+.col2{
+  flex: 3;
+  border: beige;
+}
+
+.col_flex{
+  display: flex;
+  flex-direction: row;
+}
+.col3{
+  flex: 1;
+  border: beige;
+}
+.row2{
+  display: flex;
+}
+ul li{
+  list-style: none;
+  display: block;
+  font-family: Chalkboard;
+  margin-bottom: 1em;
+}
+
+.chalkbd{
+  font-family: Chalkboard;
+  text-indent: 1em;
+}
+
+ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li a:hover{
+  color: pink;
+}
+
+li li a:current{
+  color: pink;
+}
+
+ul li a{
+  text-decoration: none;
+}
+.avatar{
+  flex: 4;
+  margin: 3em;
+}
+
+.con {
+  flex: 6;
+  margin: 3em;
+  width: auto;
+}
+
+.btwn{
+  display: inline-block;
+  width: auto;
+}
+.line {
+  display: inline-block;
+  border-right: 1rem solid pink;
+  font-size: 200%; /* 字体大小 */
+  font-family: monospace;/* 等宽字体 */
+  white-space: nowrap; /* 文字不换行 */
+  overflow: hidden; /* 多余的文字内容隐藏 */
+  animation: borders 0.7s infinite normal,
+  widths 2s steps(16); /* 重点 steps() */
+}
+@keyframes broders {
+  from {border-right-color: #000;}
+  to {border-right-color: #fff;}
+}
+/* 容器宽的改变动画 */
+@keyframes widths {
+  from {width: 0;}
+  to {width: 100%;} /* 也可以是固定宽 */
+}
